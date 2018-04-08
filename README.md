@@ -12,6 +12,8 @@ click [here](http://ozkg680jm.bkt.clouddn.com/HNCV3.6.29.1711031.apk) to downloa
 
 <img src="http://ozkg680jm.bkt.clouddn.com/autojump.png" width=30% height=70%>
 
+
+
 ## More
 I am not learn JAVA language. Now, I only decode this application. If you are good at programming and have free time, your help will be important.
 
