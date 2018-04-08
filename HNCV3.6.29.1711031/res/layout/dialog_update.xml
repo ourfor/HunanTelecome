@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_dialog" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="320.0dip" android:layout_height="140.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:textSize="18.0sp" android:id="@id/tv_dialog_update_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:layout_marginBottom="13.0dip" android:text="检测到有新版本1111，是否升级？" style="@style/login_green" />
+        <View android:background="@color/gray_light" android:layout_width="wrap_content" android:layout_height="2.0px" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/gray_more_dark" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="17.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="17.0dip" android:text="界面改版，有新功能上线了，\n还不快去更新！" android:lineSpacingExtra="3.0dip" android:lineSpacingMultiplier="1.5" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="320.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+        <Button android:textSize="18.0sp" android:gravity="center" android:id="@id/btn_dialog_update_left" android:background="@drawable/btn_dialog_left_selector" android:layout_width="0.0dip" android:layout_height="55.0dip" android:text="以后再说" android:layout_weight="1.0" style="@style/login_green" />
+        <Button android:textSize="18.0sp" android:gravity="center" android:id="@id/btn_dialog_update_right" android:background="@drawable/btn_dialog_right_selector" android:layout_width="0.0dip" android:layout_height="55.0dip" android:text="现在更新" android:layout_weight="1.0" style="@style/login_green" />
+    </LinearLayout>
+</LinearLayout>

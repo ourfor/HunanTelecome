@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gray_more_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fl_main_ui_content" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <View android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rg_main_ui_bottom" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="55.0dip">
+        <RadioButton android:id="@id/rb_main_ui_1" android:text="网络" android:drawableTop="@drawable/rb_main_ui_1_drawable_selector" style="@style/rb_main_ui" />
+        <RadioButton android:id="@id/rb_main_ui_3" android:text="我" android:drawableTop="@drawable/rb_main_ui_3_drawable_selector" style="@style/rb_main_ui" />
+    </RadioGroup>
+</LinearLayout>

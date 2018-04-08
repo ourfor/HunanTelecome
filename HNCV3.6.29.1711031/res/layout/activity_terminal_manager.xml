@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gray_more_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/bg_title" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageView android:id="@id/iv_terminal_manager_back" android:layout_width="45.0dip" android:layout_height="wrap_content" android:src="@drawable/btn_back_selector" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上网终端管理" android:layout_centerInParent="true" style="@style/tv_title" />
+        <ImageView android:id="@id/iv_terminal_manager_refresh" android:padding="10.0dip" android:layout_width="43.0dip" android:layout_height="43.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/btn_refresh" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_terminal_manager_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="35.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="@color/green_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="当前登录终端 : " android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <ListView android:id="@id/ternminal_manager_listview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:divider="@color/gray" android:dividerHeight="1.0dip" />
+        <View android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/gray_more_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:text="如登录信息非本人操作，请尽快修改密码 。" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/rl_terminal_manager_error" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="260.0dip" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_warning" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black_light" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_terminal_manager_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:text="获取参数失败，请检查校园无线网络后重试（201）" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

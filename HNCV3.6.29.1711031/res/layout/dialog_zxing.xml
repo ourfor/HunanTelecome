@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_dialog_title" android:layout_width="320.0dip" android:layout_height="48.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:textSize="22.0sp" android:textColor="@color/green_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="扫码认证" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="320.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+        <View android:background="@color/gray_light" android:layout_width="wrap_content" android:layout_height="2.0px" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/gray_more_dark" android:gravity="center" android:id="@id/tv_dialog_zxing_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="25.0dip" android:text="确定要为计算机：DESKtns-123ndsd\n认证上网吗？" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="320.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+        <Button android:textSize="18.0sp" android:textColor="@color/green_dark" android:gravity="center" android:id="@id/btn_dialog_zxing_left" android:background="@drawable/btn_dialog_left_selector" android:layout_width="0.0dip" android:layout_height="55.0dip" android:text="取消" android:layout_weight="1.0" />
+        <Button android:textSize="18.0sp" android:textColor="@color/green_dark" android:gravity="center" android:id="@id/btn_dialog_zxing_right" android:background="@drawable/btn_dialog_right_selector" android:layout_width="0.0dip" android:layout_height="55.0dip" android:text="确定" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gray_more_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/tool_80dp">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/iv_terminal_manager_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/ic_phone" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/tv_18sp" android:textColor="@color/gray_more_dark" android:id="@id/tv_terminal_manager_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="手机名称，华为什么" />
+                        <TextView android:textSize="@dimen/about_16sp" android:textColor="@color/gray_dark" android:id="@id/tv_terminal_manager_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:text="时间时间时间" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="18.0sp" android:textColor="@color/green_dark" android:gravity="center" android:id="@id/tv_terminal_manager_myself" android:visibility="visible" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:text="本机" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <Button android:textSize="18.0sp" android:textColor="@color/green_dark" android:id="@id/btn_terminal_manager_logout" android:background="@drawable/btn_terminal_manager_logout_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="下线" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

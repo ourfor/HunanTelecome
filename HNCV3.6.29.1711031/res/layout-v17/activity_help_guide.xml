@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/bg_title" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageView android:id="@id/iv_help_guide_back" android:layout_width="45.0dip" android:layout_height="wrap_content" android:src="@drawable/btn_back_selector" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="帮助指引" android:layout_centerInParent="true" style="@style/tv_title" />
+        <TextView android:textSize="@dimen/sp_18" android:textColor="@drawable/tv_title_selector" android:id="@id/tv_help_guide_upload_log" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="上传日志" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="15.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/fl_help_guide_web" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <WebView android:id="@id/wv_help_guide" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/pb_help_guide" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyle" />
+    </FrameLayout>
+</LinearLayout>

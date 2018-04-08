@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gray_more_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/bg_title" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我" android:layout_centerInParent="true" style="@style/tv_title" />
+    </RelativeLayout>
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_fragment_me_login_account" android:background="@drawable/btn_fragment_me_selector" android:layout_width="fill_parent" android:layout_height="53.0dip" android:layout_marginTop="@dimen/viewflipper_pic_20dp">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="17.0dip" android:layout_marginRight="17.0dip" android:src="@drawable/ic_login_account" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <TextView android:textSize="16.0sp" android:textColor="@color/black_light" android:gravity="center_vertical" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="登录账号" android:layout_weight="1.0" />
+                        <TextView android:textColor="@color/gray_dark" android:gravity="center|right" android:layout_gravity="center_vertical" android:id="@id/tv_fragment_me_login_account" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="138xxxxxxxx" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="17.0dip" android:layout_marginRight="17.0dip" android:src="@drawable/ic_enter_arrows" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_fragment_me_login_setting" android:background="@drawable/btn_fragment_me_selector" android:layout_width="fill_parent" android:layout_height="53.0dip">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="17.0dip" android:layout_marginRight="17.0dip" android:src="@drawable/ic_login_setting" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <View android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <TextView android:textSize="16.0sp" android:textColor="@color/black_light" android:gravity="center_vertical" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="登录设置" android:layout_weight="1.0" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="17.0dip" android:layout_marginRight="17.0dip" android:src="@drawable/ic_enter_arrows" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_fragment_me_terminal_manager" android:background="@drawable/btn_fragment_me_selector" android:layout_width="fill_parent" android:layout_height="53.0dip">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="17.0dip" android:layout_marginRight="17.0dip" android:src="@drawable/ic_terminal_manager" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <View android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <TextView android:textSize="16.0sp" android:textColor="@color/black_light" android:gravity="center_vertical" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="上网终端管理" android:layout_weight="1.0" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="17.0dip" android:layout_marginRight="17.0dip" android:src="@drawable/ic_enter_arrows" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_fragment_me_help_guide" android:background="@drawable/btn_fragment_me_selector" android:layout_width="fill_parent" android:layout_height="53.0dip" android:layout_marginTop="@dimen/viewflipper_pic_20dp">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="17.0dip" android:layout_marginRight="17.0dip" android:src="@drawable/ic_help_guide" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <TextView android:textSize="16.0sp" android:textColor="@color/black_light" android:gravity="center_vertical" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="帮助指引" android:layout_weight="1.0" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="17.0dip" android:layout_marginRight="17.0dip" android:src="@drawable/ic_enter_arrows" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_fragment_me_update" android:background="@drawable/btn_fragment_me_selector" android:layout_width="fill_parent" android:layout_height="53.0dip">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="17.0dip" android:layout_marginRight="17.0dip" android:src="@drawable/ic_update" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <View android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <TextView android:textSize="16.0sp" android:textColor="@color/black_light" android:gravity="center_vertical" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="版本更新" android:layout_weight="1.0" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="17.0dip" android:layout_marginRight="17.0dip" android:src="@drawable/ic_enter_arrows" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_fragment_me_about_app" android:background="@drawable/btn_fragment_me_selector" android:layout_width="fill_parent" android:layout_height="53.0dip">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="17.0dip" android:layout_marginRight="17.0dip" android:src="@drawable/ic_about_app" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <View android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <TextView android:textSize="16.0sp" android:textColor="@color/black_light" android:gravity="center_vertical" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="关于天翼校园" android:layout_weight="1.0" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="17.0dip" android:layout_marginRight="17.0dip" android:src="@drawable/ic_enter_arrows" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

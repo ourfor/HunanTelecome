@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="decode" />
+    <item type="id" name="decode_failed" />
+    <item type="id" name="decode_succeeded" />
+    <item type="id" name="launch_product_query" />
+    <item type="id" name="quit" />
+    <item type="id" name="restart_preview" />
+    <item type="id" name="return_scan_result" />
+    <item type="id" name="iv_about_app_back">false</item>
+    <item type="id" name="preview_view">false</item>
+    <item type="id" name="viewfinder_view">false</item>
+    <item type="id" name="iv_capture_back">false</item>
+    <item type="id" name="iv_help_guide_back">false</item>
+    <item type="id" name="tv_help_guide_upload_log">false</item>
+    <item type="id" name="fl_help_guide_web">false</item>
+    <item type="id" name="wv_help_guide">false</item>
+    <item type="id" name="pb_help_guide">false</item>
+    <item type="id" name="iv_login_back">false</item>
+    <item type="id" name="et_login_account">false</item>
+    <item type="id" name="et_login_password">false</item>
+    <item type="id" name="cb_login_eye">false</item>
+    <item type="id" name="cb_login_remember_password">false</item>
+    <item type="id" name="btn_login">false</item>
+    <item type="id" name="iv_login_setting_back">false</item>
+    <item type="id" name="cb_login_setting_wifi">false</item>
+    <item type="id" name="cb_login_setting_reconnect">false</item>
+    <item type="id" name="iv_logout_back">false</item>
+    <item type="id" name="tv_logout_account">false</item>
+    <item type="id" name="tv_logout_password">false</item>
+    <item type="id" name="iv_logout_eye">false</item>
+    <item type="id" name="cb_logout_remember_password">false</item>
+    <item type="id" name="btn_logout">false</item>
+    <item type="id" name="fl_main_ui_content">false</item>
+    <item type="id" name="rg_main_ui_bottom">false</item>
+    <item type="id" name="rb_main_ui_1">false</item>
+    <item type="id" name="rb_main_ui_3">false</item>
+    <item type="id" name="iv_terminal_manager_back">false</item>
+    <item type="id" name="iv_terminal_manager_refresh">false</item>
+    <item type="id" name="ll_terminal_manager_list">false</item>
+    <item type="id" name="ternminal_manager_listview">false</item>
+    <item type="id" name="rl_terminal_manager_error">false</item>
+    <item type="id" name="tv_terminal_manager_error">false</item>
+    <item type="id" name="iv_terminal_manager_icon">false</item>
+    <item type="id" name="tv_terminal_manager_name">false</item>
+    <item type="id" name="tv_terminal_manager_time">false</item>
+    <item type="id" name="tv_terminal_manager_myself">false</item>
+    <item type="id" name="btn_terminal_manager_logout">false</item>
+    <item type="id" name="tv_dialog_help_content">false</item>
+    <item type="id" name="btn_dialog_help_left">false</item>
+    <item type="id" name="btn_dialog_help_right">false</item>
+    <item type="id" name="btn_dialog_quit_left">false</item>
+    <item type="id" name="btn_dialog_quit_right">false</item>
+    <item type="id" name="tv_dialog_update_title">false</item>
+    <item type="id" name="btn_dialog_update_left">false</item>
+    <item type="id" name="btn_dialog_update_right">false</item>
+    <item type="id" name="tv_dialog_zxing_content">false</item>
+    <item type="id" name="btn_dialog_zxing_left">false</item>
+    <item type="id" name="btn_dialog_zxing_right">false</item>
+    <item type="id" name="et_dialog_zxing_input_account">false</item>
+    <item type="id" name="et_dialog_zxing_input_password">false</item>
+    <item type="id" name="btn_dialog_zxing_input_left">false</item>
+    <item type="id" name="btn_dialog_zxing_input_right">false</item>
+    <item type="id" name="ll_fragment_me_login_account">false</item>
+    <item type="id" name="tv_fragment_me_login_account">false</item>
+    <item type="id" name="ll_fragment_me_login_setting">false</item>
+    <item type="id" name="ll_fragment_me_terminal_manager">false</item>
+    <item type="id" name="ll_fragment_me_help_guide">false</item>
+    <item type="id" name="ll_fragment_me_update">false</item>
+    <item type="id" name="ll_fragment_me_about_app">false</item>
+    <item type="id" name="btn_network_zxing">false</item>
+    <item type="id" name="btn_network_help">false</item>
+    <item type="id" name="ll_network_advert">false</item>
+    <item type="id" name="wv_network_advert">false</item>
+    <item type="id" name="rl_network_no_wifi">false</item>
+    <item type="id" name="ll_network_online">false</item>
+    <item type="id" name="tv_network_online_account">false</item>
+    <item type="id" name="tv_network_online_time">false</item>
+    <item type="id" name="btn_network_logout">false</item>
+    <item type="id" name="ll_network_login">false</item>
+    <item type="id" name="et_network_account">false</item>
+    <item type="id" name="et_network_passwork">false</item>
+    <item type="id" name="cb_network_eye">false</item>
+    <item type="id" name="cb_network_remember_password">false</item>
+    <item type="id" name="btn_network_login">false</item>
+</resources>

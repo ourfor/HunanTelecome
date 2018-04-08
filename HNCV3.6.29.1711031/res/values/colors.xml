@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="txt">#ff64a9c1</color>
+    <color name="background">#ffa091df</color>
+    <color name="checknet_error">#ffff7800</color>
+    <color name="checknet_succes">#ff25a52c</color>
+    <color name="checknet_stop">#ff656565</color>
+    <color name="nowifilogin">#ffababab</color>
+    <color name="black_light">#ff333333</color>
+    <color name="black">#ff000000</color>
+    <color name="blue_light">#ff87b5e1</color>
+    <color name="blue">#ff4a92d6</color>
+    <color name="orange">#ffcd8323</color>
+    <color name="green_more_light">#ffd2f6c3</color>
+    <color name="green_light">#ff74cd4d</color>
+    <color name="green_dark">#ff25a52c</color>
+    <color name="green_more_dark">#ff29792d</color>
+    <color name="gray_more_light">#ffefefef</color>
+    <color name="gray_light">#ffe0e0e0</color>
+    <color name="gray">#ffc9c9c9</color>
+    <color name="gray_dark">#ff999999</color>
+    <color name="gray_more_dark">#ff666666</color>
+    <color name="white">#ffffffff</color>
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="possible_result_points">#c0ffbd21</color>
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c099cc00</color>
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="viewfinder_blue">#ff0ec3ff</color>
+</resources>

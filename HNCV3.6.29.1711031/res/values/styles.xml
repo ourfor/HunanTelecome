@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light" />
+    <style name="AppTheme" parent="@style/AppBaseTheme" />
+    <style name="AppNoTitle" parent="@style/AppBaseTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/cb_login_selector</item>
+    </style>
+    <style name="login_gray">
+        <item name="android:textColor">#ffababab</item>
+    </style>
+    <style name="login_green">
+        <item name="android:textColor">#ff25a52c</item>
+    </style>
+    <style name="login_out_color">
+        <item name="android:textColor">#ffcd8323</item>
+    </style>
+    <style name="tv_title">
+        <item name="android:textSize">22.0sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="rb_main_ui">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@drawable/rb_main_ui_text_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">2.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+</resources>

@@ -1,0 +1,29 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: HNCV3.6.29.1711031.apk
+compressionType: false
+doNotCompress:
+- arsc
+- appkey
+- so
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '9'
+  targetSdkVersion: '19'
+sharedLibrary: false
+sparseResources: true
+unknownFiles:
+  org/apache/commons/io/output/blank.bmp: '8'
+  org/jsoup/nodes/entities-base.properties: '8'
+  org/jsoup/nodes/entities-full.properties: '8'
+  org/jsoup/nodes/entities-xhtml.properties: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.3.2
+versionInfo:
+  versionCode: '29'
+  versionName: 3.6.29.1103
