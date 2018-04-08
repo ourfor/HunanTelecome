@@ -10,7 +10,7 @@ As we can experience,the school net is very terrible, whinch limit two devices o
 ## Download
 click [here](http://ozkg680jm.bkt.clouddn.com/HNCV3.6.29.1711031.apk) to download the application on android platform.
 
-![Application](http://ozkg680jm.bkt.clouddn.com/autojump.png)
+<img src="http://ozkg680jm.bkt.clouddn.com/autojump.png" width=30% height=70%>
 
 ## More
 I am not learn JAVA language. Now, I only decode this application. If you are good at programming and have free time, your help will be important.
