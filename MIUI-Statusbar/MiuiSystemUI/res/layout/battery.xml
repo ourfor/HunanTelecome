@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.systemui.statusbar.phone.BatteryStatusIconView android:id="@id/battery" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    <TextView android:textAppearance="@style/TextAppearance.StatusBar.Battery" android:gravity="center" android:id="@id/battery_num" android:paddingBottom="@dimen/statusbar_battery_text_bottom_padding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="1.0dip" android:layout_marginEnd="3.0dip" />
+</LinearLayout>

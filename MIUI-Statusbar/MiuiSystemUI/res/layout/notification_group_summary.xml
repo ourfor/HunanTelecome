@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.phone.NotificationGroupSummaryView android:orientation="horizontal" android:background="@android:drawable/jog_tab_left_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@android:dimen/messaging_image_max_height" android:paddingStart="@android:dimen/navigation_bar_width" android:paddingEnd="@android:dimen/navigation_bar_width_car_mode"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="@android:dimen/messaging_image_max_height">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/icon" android:layout_width="@android:dimen/navigation_bar_height_landscape_car_mode" android:layout_height="@android:dimen/navigation_bar_height_landscape" android:scaleType="centerInside" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingTop="@android:dimen/navigation_bar_height_portrait" android:paddingBottom="@android:dimen/notification_action_list_height" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@android:dimen/messaging_image_max_height" android:layout_marginStart="@android:dimen/lock_pattern_dot_size_activated">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip">
+            <TextView android:textAppearance="@android:style/TextAppearance.StatusBar.EventContent.Title" android:id="@id/title" android:fadingEdge="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+            <DateTimeView android:textAppearance="@android:style/TextAppearance.SlidingTabNormal" android:gravity="center" android:layout_gravity="center" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="0.0" android:paddingStart="8.0dip" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-4.0dip">
+            <LinearLayout android:orientation="vertical" android:id="@id/container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/child0" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="@android:style/TextAppearance.StatusBar.EventContent.Title" android:id="@id/subtitle0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:paddingEnd="4.0dip" />
+                    <TextView android:textAppearance="@android:style/TextAppearance.StatusBar.EventContent" android:id="@id/subtext0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:paddingEnd="4.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/child1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="@android:style/TextAppearance.StatusBar.EventContent.Title" android:id="@id/subtitle1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:paddingEnd="4.0dip" />
+                    <TextView android:textAppearance="@android:style/TextAppearance.StatusBar.EventContent" android:id="@id/subtext1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:paddingEnd="4.0dip" />
+                </LinearLayout>
+                <RelativeLayout android:id="@id/child2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="@android:style/TextAppearance.Material.Notification" android:gravity="end" android:id="@id/overflow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentRight="true" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignWithParentIfMissing="true" android:layout_toStartOf="@id/overflow">
+                        <TextView android:textAppearance="@android:style/TextAppearance.StatusBar.EventContent.Title" android:id="@id/subtitle2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:paddingEnd="4.0dip" />
+                        <TextView android:textAppearance="@android:style/TextAppearance.StatusBar.EventContent" android:id="@id/subtext2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:paddingEnd="4.0dip" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:textAppearance="@android:style/TextAppearance.StatusBar.EventContent" android:id="@id/expand_tips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/click_expand" android:singleLine="true" />
+        </FrameLayout>
+    </LinearLayout>
+</com.android.systemui.statusbar.phone.NotificationGroupSummaryView>

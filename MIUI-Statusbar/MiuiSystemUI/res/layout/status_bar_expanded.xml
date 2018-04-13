@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.phone.TrackingView android:id="@id/notification_panel" android:background="@drawable/notification_panel_outside_bg" android:focusable="true" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/expanded_bg" android:background="@drawable/notification_panel_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:gravity="center_horizontal" android:layout_gravity="@integer/notification_panel_layout_gravity" android:id="@id/expanded_status_bar_content" android:background="@drawable/notification_list_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/expanded_notifications" layout="@layout/status_bar_expanded_notifications" />
+        <include android:id="@id/expended_toggles" layout="@layout/status_bar_expanded_toggles" />
+    </FrameLayout>
+    <com.android.systemui.statusbar.phone.ExpandedBottomView android:id="@id/tab_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="bottom|center" android:id="@id/tab_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/tab_notifications" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tab_notifications_bg" android:contentDescription="@string/accessibility_desc_notification_shade" />
+            <ImageView android:id="@id/tab_toggles" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tab_toggles_bg" android:contentDescription="@string/accessibility_desc_quick_settings" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="bottom|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@android:style/TextAppearance.StatusBar.EventContent" android:textSize="12.0dip" android:ellipsize="marquee" android:gravity="center" android:id="@id/latest_area_info1" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:paddingStart="15.0dip" android:paddingEnd="15.0dip" />
+            <TextView android:textAppearance="@android:style/TextAppearance.StatusBar.EventContent" android:textSize="12.0dip" android:ellipsize="marquee" android:gravity="center" android:id="@id/latest_area_info2" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:paddingStart="15.0dip" android:paddingEnd="15.0dip" />
+        </LinearLayout>
+    </com.android.systemui.statusbar.phone.ExpandedBottomView>
+    <LinearLayout android:layout_gravity="bottom|center" android:id="@id/tab_buttons" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/clear_all_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_notify_clear" android:contentDescription="@string/accessibility_clear_all" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/settings_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_notify_quicksettings" android:contentDescription="@string/accessibility_settings" />
+    </LinearLayout>
+    <include layout="@layout/status_bar_expanded_header" />
+    <include android:id="@id/status_bar_simple_expanded" layout="@layout/status_bar_simple" />
+</com.android.systemui.statusbar.phone.TrackingView>

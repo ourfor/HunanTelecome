@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/wallpaper_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/wallpaper" android:scaleType="fitXY" />
+    <ImageView android:id="@id/home_icon_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/home_icon" android:scaleType="matrix" />
+    <View android:id="@id/recents_bg_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/app_calculator_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/app_calculator" android:scaleType="fitXY" android:layout_centerVertical="true" />
+    <View android:id="@id/app_bg_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/app_note_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/app_note" android:scaleType="fitXY" />
+    <View android:id="@id/navstubview_bg_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.android.systemui.fsgesture.NavStubDemoView android:id="@id/fsg_nav_view" android:background="#00000000" android:clickable="true" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_alignParentBottom="true" />
+    <com.android.systemui.fsgesture.FsGestureDemoTitleView android:id="@id/fsgesture_title_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+    <com.android.systemui.fsgesture.FsGestureDemoSwipeView android:id="@id/fsgesture_swipe_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</RelativeLayout>

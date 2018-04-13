@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:maxLevel="0">
+        <layer-list>
+            <item>
+                <animation-list android:oneshot="false">
+                    <item android:duration="1000" android:drawable="@drawable/oldman_stat_sys_battery_0_rev" />
+                    <item android:duration="500" android:drawable="@drawable/oldman_stat_sys_battery_20_rev" />
+                    <item android:duration="500" android:drawable="@drawable/oldman_stat_sys_battery_40_rev" />
+                    <item android:duration="500" android:drawable="@drawable/oldman_stat_sys_battery_60_rev" />
+                    <item android:duration="500" android:drawable="@drawable/oldman_stat_sys_battery_80_rev" />
+                    <item android:duration="500" android:drawable="@drawable/oldman_stat_sys_battery_100_rev" />
+                </animation-list>
+            </item>
+        </layer-list>
+    </item>
+    <item android:maxLevel="10">
+        <layer-list>
+            <item>
+                <animation-list android:oneshot="false">
+                    <item android:duration="1000" android:drawable="@drawable/oldman_stat_sys_battery_0_rev" />
+                    <item android:duration="500" android:drawable="@drawable/oldman_stat_sys_battery_20_rev" />
+                    <item android:duration="500" android:drawable="@drawable/oldman_stat_sys_battery_40_rev" />
+                    <item android:duration="500" android:drawable="@drawable/oldman_stat_sys_battery_60_rev" />
+                    <item android:duration="500" android:drawable="@drawable/oldman_stat_sys_battery_80_rev" />
+                    <item android:duration="500" android:drawable="@drawable/oldman_stat_sys_battery_100_rev" />
+                </animation-list>
+            </item>
+        </layer-list>
+    </item>
+    <item android:maxLevel="30">
+        <layer-list>
+            <item>
+                <animation-list android:oneshot="false">
+                    <item android:duration="1000" android:drawable="@drawable/oldman_stat_sys_battery_20_rev" />
+                    <item android:duration="500" android:drawable="@drawable/oldman_stat_sys_battery_40_rev" />
+                    <item android:duration="500" android:drawable="@drawable/oldman_stat_sys_battery_60_rev" />
+                    <item android:duration="500" android:drawable="@drawable/oldman_stat_sys_battery_80_rev" />
+                    <item android:duration="500" android:drawable="@drawable/oldman_stat_sys_battery_100_rev" />
+                </animation-list>
+            </item>
+        </layer-list>
+    </item>
+    <item android:maxLevel="50">
+        <layer-list>
+            <item>
+                <animation-list android:oneshot="false">
+                    <item android:duration="1000" android:drawable="@drawable/oldman_stat_sys_battery_40_rev" />
+                    <item android:duration="500" android:drawable="@drawable/oldman_stat_sys_battery_60_rev" />
+                    <item android:duration="500" android:drawable="@drawable/oldman_stat_sys_battery_80_rev" />
+                    <item android:duration="500" android:drawable="@drawable/oldman_stat_sys_battery_100_rev" />
+                </animation-list>
+            </item>
+        </layer-list>
+    </item>
+    <item android:maxLevel="70">
+        <layer-list>
+            <item>
+                <animation-list android:oneshot="false">
+                    <item android:duration="1000" android:drawable="@drawable/oldman_stat_sys_battery_60_rev" />
+                    <item android:duration="500" android:drawable="@drawable/oldman_stat_sys_battery_80_rev" />
+                    <item android:duration="500" android:drawable="@drawable/oldman_stat_sys_battery_100_rev" />
+                </animation-list>
+            </item>
+        </layer-list>
+    </item>
+    <item android:maxLevel="90">
+        <layer-list>
+            <item>
+                <animation-list android:oneshot="false">
+                    <item android:duration="1000" android:drawable="@drawable/oldman_stat_sys_battery_80_rev" />
+                    <item android:duration="500" android:drawable="@drawable/oldman_stat_sys_battery_100_rev" />
+                </animation-list>
+            </item>
+        </layer-list>
+    </item>
+    <item android:maxLevel="99">
+        <layer-list>
+            <item>
+                <animation-list android:oneshot="false">
+                    <item android:duration="1000" android:drawable="@drawable/oldman_stat_sys_battery_80_rev" />
+                    <item android:duration="500" android:drawable="@drawable/oldman_stat_sys_battery_100_rev" />
+                </animation-list>
+            </item>
+        </layer-list>
+    </item>
+    <item android:maxLevel="100">
+        <layer-list>
+            <item android:drawable="@drawable/oldman_stat_sys_battery_100_rev" />
+        </layer-list>
+    </item>
+</level-list>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/mdb_restore_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="45.0sp" android:textColor="@color/mdb_restore_white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" android:text="@string/mdb_restore_mode" android:shadowColor="@color/mdb_restore_shadow" android:shadowDx="0.0" android:shadowDy="8.0" android:shadowRadius="8.0" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="33.0sp" android:textColor="@color/mdb_restore_grey" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mdb_entering" android:shadowColor="@color/mdb_restore_shadow" android:shadowDx="0.0" android:shadowDy="8.0" android:shadowRadius="8.0" android:layout_marginEnd="5.0dip" />
+            <com.android.systemui.usb.DotAnimation android:textAppearance="?android:textAppearanceLarge" android:textSize="33.0sp" android:textColor="@color/mdb_restore_grey" android:id="@id/mdb_text_dot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="@color/mdb_restore_shadow" android:shadowDx="0.0" android:shadowDy="8.0" android:shadowRadius="8.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="50.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mdb_info_2" android:layout_marginEnd="6.0dip" />
+        <TextView android:textColor="@color/mdb_restore_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mdb_restore_info2" style="@android:style/TextAppearance.Small" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/mdb_restore_cancel_layout" android:background="@drawable/mdb_cancel_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mdb_info_1" android:layout_marginEnd="6.0dip" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mdb_restore_info1" style="@android:style/TextAppearance.Small" />
+        </LinearLayout>
+        <Button android:id="@id/mdb_restore_cancel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/mdb_restore_cancel" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" style="@miui:style/Widget.Button" />
+    </LinearLayout>
+</FrameLayout>

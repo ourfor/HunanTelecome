@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.phone.NotificationsView android:orientation="vertical" android:focusable="true" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui">
+    <com.android.systemui.statusbar.phone.NotificationScrollView android:id="@id/scroll" android:visibility="gone" android:fadingEdge="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="ifContentScrolls">
+        <LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/status_bar_expanded_flow" />
+            <com.android.systemui.statusbar.policy.NotificationRowLayout android:id="@id/latestItems" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" systemui:rowHeight="@dimen/notification_row_min_height" />
+        </LinearLayout>
+    </com.android.systemui.statusbar.phone.NotificationScrollView>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/no_notification_tips" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Space android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="33.0" />
+        <TextView android:textSize="@dimen/no_notification_tips_text_size" android:textColor="@color/no_notification_tips_text" android:id="@id/no_notification_tips_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_notification_tips" android:singleLine="true" />
+        <TextView android:textColor="@color/expanded_notification_manager_color" android:id="@id/manage_notification" android:background="@drawable/no_notification_manager_bg" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:text="@string/expanded_notification_manager" style="@style/TextAppearance.StatusBar.Expanded.Blocker" />
+        <Space android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="54.0" />
+    </LinearLayout>
+</com.android.systemui.statusbar.phone.NotificationsView>

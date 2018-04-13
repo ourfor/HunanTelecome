@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.taskmanager.TaskItemView android:gravity="center" android:orientation="vertical" android:clickable="true" android:longClickable="true" android:clipChildren="false" android:clipToPadding="false" android:paddingStart="@dimen/recent_task_item_horizontal_padding" android:paddingEnd="@dimen/recent_task_item_horizontal_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.systemui.taskmanager.MultiTaskView android:layout_gravity="center" android:id="@id/multiTaskView" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/titleContainer" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.android.systemui.taskmanager.EfficientTextView android:gravity="start|center" android:layout_gravity="start|center" android:id="@id/titleInScreenshotMode" android:paddingTop="@dimen/recent_task_title_padding_top" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TaskItemTitle" />
+        <com.android.systemui.taskmanager.EfficientTextView android:layout_gravity="center|top" android:id="@id/titleInIconMode" android:paddingTop="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TaskItemTitle" />
+    </FrameLayout>
+</com.android.systemui.taskmanager.TaskItemView>

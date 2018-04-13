@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.phone.NotificationPanelView android:id="@id/notification_panel" android:background="@drawable/notification_panel_outside_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:androidprv="http://schemas.android.com/apk/res-auto"
+  xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui">
+    <View android:id="@id/expanded_bg" android:background="@drawable/notification_panel_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:gravity="center_horizontal" android:layout_gravity="@integer/notification_panel_layout_gravity" android:orientation="vertical" android:id="@id/notification_container_parent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/quick_settings_container" android:background="@drawable/toggles_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.android.systemui.statusbar.phone.ExpandableTogglesLayout android:orientation="vertical" android:id="@id/expandable_toggle_layout" android:layout_width="fill_parent" android:layout_height="@dimen/single_page_toggles_height" />
+            <include android:layout_width="fill_parent" android:layout_height="@dimen/single_page_brightness_panel_height" android:layout_marginBottom="@dimen/single_page_brightness_panel_bottom" layout="@layout/status_bar_expanded_brightness_panel" />
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/status_bar_expanded_flow" />
+        </LinearLayout>
+        <View android:id="@id/notification_stack_bg" android:background="@drawable/notification_list_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.android.systemui.statusbar.stack.NotificationStackScrollLayout android:id="@id/notification_stack_scroller" android:fadingEdge="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include android:id="@id/qs_detail" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/qs_detail" />
+    </FrameLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/clear_all_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_notify_clear" android:contentDescription="@string/accessibility_clear_all" />
+    <include layout="@layout/status_bar_expanded_header" />
+    <include android:id="@id/status_bar_simple_expanded" layout="@layout/status_bar_simple" />
+</com.android.systemui.statusbar.phone.NotificationPanelView>

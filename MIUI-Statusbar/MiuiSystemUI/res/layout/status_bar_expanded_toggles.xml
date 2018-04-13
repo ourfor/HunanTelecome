@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.phone.StatusBarToggles android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/rot0" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.android.systemui.statusbar.phone.SnapScrollView android:scrollbarThumbVertical="@drawable/expanded_toggles_scrollbar" android:id="@id/scrollToggles" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:overScrollMode="ifContentScrolls">
+            <LinearLayout android:orientation="vertical" android:id="@id/toggle_group" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </com.android.systemui.statusbar.phone.SnapScrollView>
+        <include layout="@layout/status_bar_expanded_brightness_panel" />
+    </LinearLayout>
+    <include layout="@layout/status_bar_expanded_toggles_rot90" />
+    <include android:id="@id/qs_detail" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/qs_detail" />
+</com.android.systemui.statusbar.phone.StatusBarToggles>

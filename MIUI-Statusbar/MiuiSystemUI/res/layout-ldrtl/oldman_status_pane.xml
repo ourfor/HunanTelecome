@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.OldmanStatusPane android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/oldman_basic_layer" android:background="@drawable/oldman_status_bar_basic_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false">
+        <LinearLayout android:gravity="end|center" android:orientation="horizontal" android:id="@id/oldman_basic_right_part" android:layout_width="wrap_content" android:layout_height="wrap_content" android:baselineAligned="false" android:layoutDirection="ltr" android:paddingEnd="@dimen/oldman_status_bar_common_padding" android:layout_marginStart="12.0dip">
+            <include android:id="@id/oldman_clock" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/oldman_clock_view" />
+        </LinearLayout>
+        <LinearLayout android:gravity="start|center" android:orientation="horizontal" android:id="@id/oldman_basic_left_part" android:layout_width="0.0dip" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_weight="1.0" android:layout_marginEnd="12.0dip">
+            <FrameLayout android:id="@id/oldman_battery_box" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/oldman_battery" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/oldman_airplane_box" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/oldman_status_bar_basic_text_size" android:textColor="@color/oldman_status_bar_basic_text_color" android:id="@id/oldman_airplane" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/oldman_airplane_mode_text" android:singleLine="true" android:paddingStart="@dimen/oldman_status_bar_common_padding" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/oldman_mobile0_box" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/oldman_mobile0_strength" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:id="@id/oldman_mobile0_datatype" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:id="@id/oldman_mobile0_activity" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:id="@id/oldman_mobile0_mark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/oldman_stat_sys_mobile0_card_mark" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/oldman_mobile0_volte_box" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/oldman_mobile0_volte" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/oldman_mobile1_box" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/oldman_mobile1_strength" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:id="@id/oldman_mobile1_datatype" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:id="@id/oldman_mobile1_activity" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:id="@id/oldman_mobile1_mark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/oldman_stat_sys_mobile1_card_mark" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/oldman_mobile1_volte_box" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/oldman_mobile1_volte" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/oldman_wifi_box" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/oldman_wifi_strength" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/oldman_bluetooth_box" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/oldman_bluetooth" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/oldman_ringer_mode_box" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/oldman_ringer_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/oldman_alarm_box" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/oldman_alarm" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/oldman_headset_box" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/oldman_headset" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/oldman_quiet_mode_box" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/oldman_quiet_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/oldman_incall_layer" android:background="@drawable/oldman_status_bar_incall_background_t" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false">
+        <LinearLayout android:gravity="start|center" android:orientation="horizontal" android:id="@id/oldman_incall_left_part" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="12.0dip">
+            <TextView android:textSize="@dimen/oldman_status_bar_incall_text_size" android:textColor="@color/oldman_status_bar_incall_text_color" android:id="@id/oldman_incall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/oldman_incall_text" android:singleLine="true" android:includeFontPadding="false" />
+        </LinearLayout>
+        <LinearLayout android:gravity="end|center" android:orientation="horizontal" android:id="@id/oldman_incall_right_part" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="12.0dip">
+            <include android:id="@id/oldman_clock_on_incall" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/oldman_clock_view" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/oldman_recorder_layer" android:background="@drawable/status_bar_recorder_layout_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false">
+        <LinearLayout android:gravity="start|center" android:orientation="horizontal" android:id="@id/oldman_recorder_left_part" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="12.0dip">
+            <TextView android:textSize="@dimen/oldman_status_bar_basic_text_size" android:textColor="@color/oldman_status_bar_basic_text_color" android:id="@id/oldman_recorder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:drawableLeft="@drawable/status_bar_recorder_icon" />
+        </LinearLayout>
+        <LinearLayout android:gravity="end|center" android:orientation="horizontal" android:id="@id/oldman_recorder_right_part" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="12.0dip">
+            <include android:id="@id/oldman_clock_on_recorder" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/oldman_clock_view" />
+        </LinearLayout>
+    </LinearLayout>
+</com.android.systemui.statusbar.OldmanStatusPane>

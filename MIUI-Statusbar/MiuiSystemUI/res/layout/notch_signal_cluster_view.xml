@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.NotchSignalClusterView android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.systemui.statusbar.AnimatedImageView android:id="@id/wifi_ap_on" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/stat_sys_wifi_ap_on" />
+    <LinearLayout android:id="@id/wifi_combo" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.android.systemui.statusbar.AnimatedImageView android:id="@id/wifi_signal" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.android.systemui.statusbar.AnimatedImageView android:id="@id/wifi_ap_connect_mark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/stat_sys_wifi_ap" />
+            <com.android.systemui.statusbar.AnimatedImageView android:layout_gravity="bottom|center" android:id="@id/wifi_inout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <TextView android:textAppearance="@style/TextAppearance.StatusBar.Carrier" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/wifi_label" android:paddingBottom="@dimen/statusbar_text_bottom_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxEms="10" android:singleLine="true" android:paddingStart="3.0dip" android:paddingEnd="3.0dip" />
+    </LinearLayout>
+    <com.android.systemui.statusbar.AnimatedImageView android:layout_gravity="center_vertical" android:id="@id/speech_hd" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/stat_sys_speech_hd" />
+    <com.android.systemui.statusbar.AnimatedImageView android:layout_gravity="center_vertical" android:id="@id/mobile_roam" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/stat_sys_data_connected_roam" />
+    <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:id="@id/mobile_combo" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.android.systemui.statusbar.AnimatedImageView android:layout_gravity="start|bottom|center" android:id="@id/mobile_inout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center|left|top" android:id="@id/notch_volte" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/stat_sys_signal_hd_notch" />
+                <com.android.systemui.statusbar.AnimatedImageView android:id="@id/mobile_signal" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:id="@id/card_slot" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/notch_mobile" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.android.systemui.statusbar.AnimatedImageView android:id="@id/notch_mobile_signal" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <com.android.systemui.statusbar.AnimatedImageView android:id="@id/notch_mobile_signal2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:textAppearance="@style/TextAppearance.StatusBar.Carrier" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/carrier" android:paddingBottom="@dimen/statusbar_text_bottom_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxEms="10" android:singleLine="true" android:layout_weight="1.0" android:paddingStart="3.0dip" android:paddingEnd="3.0dip" />
+            <TextView android:textAppearance="@style/TextAppearance.StatusBar.Carrier" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/mobile_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:paddingStart="1.0dip" android:paddingEnd="3.0dip" />
+        </LinearLayout>
+        <com.android.systemui.statusbar.AnimatedImageView android:id="@id/airplane" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/mobile_combo_cdma" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:id="@id/mobile_inout_cdma" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layoutDirection="ltr">
+                <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:id="@id/mobile_signal_evdo" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textAppearance="@style/TextAppearance.StatusBar.Carrier.CDMA" android:id="@id/mobile_type_evdo" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:id="@id/mobile_signal_cdma" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textAppearance="@style/TextAppearance.StatusBar.Carrier.CDMA" android:id="@id/mobile_type_cdma" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stat_sys_data_connected_1x_half" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textAppearance="@style/TextAppearance.StatusBar.Carrier" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/carrier_cdma" android:paddingBottom="@dimen/statusbar_text_bottom_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxEms="10" android:singleLine="true" android:layout_weight="1.0" android:paddingStart="3.0dip" android:paddingEnd="3.0dip" />
+        </LinearLayout>
+    </FrameLayout>
+    <TextView android:textAppearance="@style/TextAppearance.StatusBar.Carrier" android:ellipsize="marquee" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/volte" android:paddingBottom="@dimen/statusbar_text_bottom_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/status_bar_volte_label" android:maxEms="10" android:singleLine="true" android:paddingStart="1.0dip" android:paddingEnd="3.0dip" />
+    <com.android.systemui.statusbar.AnimatedImageView android:layout_gravity="center_vertical" android:id="@id/volte_no_service" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/stat_sys_volte_no_service" />
+</com.android.systemui.statusbar.NotchSignalClusterView>

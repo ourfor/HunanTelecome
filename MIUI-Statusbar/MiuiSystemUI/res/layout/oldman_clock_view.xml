@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.policy.OldmanClockView android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/oldman_clock_text_box" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/oldman_status_bar_clock_text_size" android:textColor="@color/oldman_status_bar_clock_text_color" android:id="@id/oldman_clock_simple_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="start|center" android:orientation="horizontal" android:id="@id/oldman_clock_segs_box" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/oldman_status_bar_clock_text_size" android:textColor="@color/oldman_status_bar_clock_text_color" android:id="@id/oldman_clock_lead_seg_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <ImageView android:id="@id/oldman_clock_hour_hi_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/oldman_clock_hour_lo_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/oldman_clock_colon_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/oldman_clock_min_hi_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/oldman_clock_min_lo_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/oldman_status_bar_clock_text_size" android:textColor="@color/oldman_status_bar_clock_text_color" android:id="@id/oldman_clock_tail_seg_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+</com.android.systemui.statusbar.policy.OldmanClockView>

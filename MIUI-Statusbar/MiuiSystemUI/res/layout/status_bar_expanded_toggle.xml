@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/toggle_container" android:layout_width="@dimen/expanded_status_bar_toggle_max_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.systemui.statusbar.LargerTouchAreaTextView android:id="@id/toggle" style="@style/StatusBarGridItem" />
+    <ImageView android:id="@id/toggle_arrow" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:src="@drawable/toggle_arrow" android:layout_alignBottom="@id/toggle" android:layout_toEndOf="@id/toggle" />
+    <ImageView android:id="@id/toggle_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/toggle" android:layout_centerHorizontal="true" />
+</RelativeLayout>

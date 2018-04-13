@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.phone.BrightnessPanel android:gravity="center" android:id="@id/brightness_panel" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/brightness_min" android:paddingBottom="@dimen/expanded_status_bar_brightness_seek_bar_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/brightness_min" />
+    <miui.widget.SeekBar android:id="@id/slider" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:contentDescription="@string/accessibility_brightness_slider" android:layout_marginStart="@dimen/expanded_status_bar_brightness_seek_bar_padding_start" android:layout_marginEnd="@dimen/expanded_status_bar_brightness_seek_bar_padding_end" style="@style/Widget.Light.SeekBar" />
+    <ImageView android:id="@id/brightness_max" android:paddingBottom="@dimen/expanded_status_bar_brightness_seek_bar_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/brightness_max" />
+</com.android.systemui.statusbar.phone.BrightnessPanel>

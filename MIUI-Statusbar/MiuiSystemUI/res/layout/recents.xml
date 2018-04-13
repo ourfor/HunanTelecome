@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.systemui.statusbar.AlphaOptimizedView android:id="@id/background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.android.systemui.recents.views.RecentsView android:id="@id/recents_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:layout_gravity="center|top" android:id="@id/incompatible_app_overlay_stub" android:layout="@layout/recents_incompatible_app_overlay" android:inflatedId="@id/incompatible_app_overlay" android:layout_width="fill_parent" android:layout_height="128.0dip" />
+    <com.android.systemui.statusbar.AlphaOptimizedImageView android:layout_gravity="bottom|center" android:id="@id/nav_bar_scrim" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/recents_lower_gradient" android:scaleType="fitXY" />
+    <include android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="0.0" layout="@layout/recents_memory_clear" />
+    <TextView android:textSize="@dimen/recents_dock_btn_text_size" android:textColor="@color/recents_dock_btn_text_color" android:gravity="center" android:layout_gravity="start|center|top" android:id="@id/btnDock" android:paddingLeft="10.0dip" android:paddingTop="23.0dip" android:paddingRight="30.0dip" android:paddingBottom="23.0dip" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recents_multi_window_mode" android:drawableLeft="@drawable/ic_recents_dock_btn" android:drawablePadding="5.0dip" android:alpha="0.0" android:fontFamily="sans-serif-medium" style="@style/TaskItemTitle" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/recents_tip_color" android:layout_gravity="center|top" android:id="@id/tip" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/recents_tip_margin_top" android:text="@string/recent_dock_tip" android:fontFamily="sans-serif-medium" style="@style/TaskItemTitle" />
+</FrameLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.phone.NotchStatusBar android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.systemui.statusbar.phone.BatteryIndicator android:layout_gravity="top" android:id="@id/battery_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/battery_indicator" android:scaleType="fitXY" />
+    <RelativeLayout android:id="@id/icons" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="3.0dip" android:paddingEnd="3.0dip">
+        <LinearLayout android:gravity="start|bottom|center" android:id="@id/notification_icon_area" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.android.systemui.statusbar.phone.IconMerger android:gravity="bottom" android:orientation="horizontal" android:id="@id/notificationIcons" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.android.systemui.statusbar.StatusBarIconView android:id="@id/notification_more_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/stat_notify_more" />
+        </LinearLayout>
+        <com.android.systemui.statusbar.phone.StatusBarIcons android:gravity="center" android:id="@id/statusbar_icon" android:layout_width="wrap_content" android:layout_height="22.0dip" android:layout_alignParentBottom="true" android:layoutDirection="rtl" android:layout_alignParentEnd="true">
+            <include android:layout_width="wrap_content" android:layout_height="fill_parent" layout="@layout/battery" />
+            <ImageView android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/battery_charging_icon" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            <LinearLayout android:gravity="center" android:id="@id/signal_cluster_container" android:layout_width="wrap_content" android:layout_height="fill_parent" android:baselineAligned="false" android:layoutDirection="ltr">
+                <include android:id="@id/signal_cluster" android:layout_width="wrap_content" android:layout_height="fill_parent" layout="@layout/signal_cluster_view" />
+                <include android:id="@id/signal_cluster2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" layout="@layout/signal_cluster_view" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/statusIcons" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            <com.android.systemui.statusbar.NetworkSpeedView android:textAppearance="@style/TextAppearance.StatusBar.Expand.Carrier" android:gravity="center" android:id="@id/network_speed_view" android:paddingBottom="@dimen/statusbar_text_bottom_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:layout_marginEnd="3.0dip" />
+            <com.android.systemui.statusbar.StatusBarIconView android:id="@id/moreIcon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/stat_notify_more" />
+        </com.android.systemui.statusbar.phone.StatusBarIcons>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/notch_icon_margin_bottom" android:layout_above="@id/statusbar_icon" android:layout_alignParentEnd="true">
+            <ImageView android:id="@id/notch_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/notch_quicksearch" android:contentDescription="@string/accessibility_settings" />
+            <ImageView android:id="@id/expanded_notification_enter_edit_mode_button" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/notch_enter_edit_mode" android:layout_above="@id/statusbar_icon" android:contentDescription="@string/accessibility_desc_block_notification" android:layout_marginStart="@dimen/notch_settings_button_margin" />
+            <ImageView android:id="@id/settings_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/notch_settings" android:contentDescription="@string/accessibility_settings" android:layout_marginStart="@dimen/notch_settings_button_margin" />
+        </LinearLayout>
+        <com.android.systemui.statusbar.phone.ExpandableTogglesButton android:id="@id/expand_toggles_button" android:visibility="gone" android:layout_width="@dimen/expanded_notification_header_expand_width" android:layout_height="@dimen/expanded_notification_header_expand_height" android:layout_marginBottom="@dimen/expanded_notification_header_setting_bottom" android:layout_above="@id/statusbar_icon" android:layout_marginEnd="@dimen/expanded_notification_header_expand_end" android:layout_alignParentEnd="true" />
+        <TextView android:textAppearance="@style/TextAppearance.StatusBar.PhoneTicker" android:gravity="bottom" android:id="@id/returnToMultiMode" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/click_to_return_multi_window" android:singleLine="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</com.android.systemui.statusbar.phone.NotchStatusBar>

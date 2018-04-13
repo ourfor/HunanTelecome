@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/task_access_locked_app_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/task_access_locked_app_padding_vertical" android:paddingEnd="@dimen/task_access_locked_app_padding_vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="1.0px" android:layout_height="0.0px" android:layout_weight="0.42" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/security_app_lock" android:layout_weight="0.0" />
+    <View android:layout_width="1.0px" android:layout_height="0.0px" android:layout_weight="0.2" />
+    <TextView android:textColor="@color/task_access_locked_app_msg" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/task_access_locked_app_msg" android:layout_weight="0.0" />
+    <View android:layout_width="1.0px" android:layout_height="0.0px" android:layout_weight="0.38" />
+</LinearLayout>

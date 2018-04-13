@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.phone.FlowStatusBar android:id="@id/flow_status_bar" android:background="@drawable/status_bar_flow_bg" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.systemui.statusbar.AlphaOptimizedLinearLayout android:id="@id/content" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/pieView" android:layout_width="@dimen/notification_large_icon_width" android:layout_height="wrap_content" android:scaleType="fitCenter" android:layout_marginStart="@dimen/notification_padding_left" />
+        <TextView android:textAppearance="@android:style/TextAppearance.StatusBar.EventContent" android:textSize="11.0dip" android:gravity="center_vertical" android:id="@id/flow_status_content" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:paddingStart="@dimen/notification_content_margin_left_to_icon" />
+        <TextView android:textAppearance="@android:style/TextAppearance.StatusBar.EventContent" android:textSize="11.0dip" android:gravity="center_vertical" android:id="@id/flow_status_purchase" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+    </com.android.systemui.statusbar.AlphaOptimizedLinearLayout>
+</com.android.systemui.statusbar.phone.FlowStatusBar>

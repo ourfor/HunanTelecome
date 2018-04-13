@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:background="@drawable/status_bar_flow_bg" android:visibility="gone" android:clickable="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="start" android:id="@id/footer_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:src="@drawable/ic_info_outline" android:tint="?android:textColorSecondary" android:contentDescription="@null" android:layout_marginStart="10.0dip" />
+    <TextView android:textAppearance="@android:style/TextAppearance.StatusBar.EventContent" android:textSize="11.0dip" android:gravity="center_vertical" android:id="@id/footer_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:paddingStart="20.0dip" />
+</LinearLayout>

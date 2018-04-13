@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.phone.StatusBarWindowView android:background="@android:color/transparent" android:focusable="true" android:descendantFocusability="afterDescendants"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui">
+    <include android:layout_width="fill_parent" android:layout_height="@dimen/status_bar_height" layout="@layout/status_bar" />
+    <include android:id="@id/brightness_mirror_panel" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.0" layout="@layout/status_bar_expanded_brightness_panel" />
+    <ViewStub android:id="@id/status_bar_expanded" android:layout="@layout/status_bar_expanded" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+    <ViewStub android:id="@id/status_bar_expanded_single_page" android:layout="@layout/status_bar_expanded_single_page" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+</com.android.systemui.statusbar.phone.StatusBarWindowView>
