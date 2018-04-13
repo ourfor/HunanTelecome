@@ -23,3 +23,7 @@ I am not learn JAVA language. Now, I only decode this application. If you are go
 ## Fact
 由于我没有学过JAVA，所以现在我也是仅仅将这个app反编译了一下，所以如果有开发过Android应用的大佬或者懂JAVA的大牛有时间、有闲情参与进来，这对这个项目而言有重大的意义。相信过不了多久就能弄明白它工作的原理了。
 <img src="http://p5culcl8r.bkt.clouddn.com/nice.jpg" width=50% height=50%>
+
+<details><summary>2018年4月13日</summary><br>
+  感觉开发这个程序的人英语太差，在apk层对应用加固后居然就直接把文件命名成了加固，再一次警醒我要把英语学好
+</details>
